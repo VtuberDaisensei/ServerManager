@@ -13,6 +13,7 @@
             <MenuItem Header="Command(_C)" />
             <MenuItem Header="Help(_H)" />
         </Menu>
+        
         <Grid DockPanel.Dock="Bottom">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="20*" />
@@ -20,6 +21,7 @@
                 <ColumnDefinition Width="150*" />
             </Grid.ColumnDefinitions>
             <DockPanel Grid.Column="0">
+
             </DockPanel>
             <GridSplitter Background="LightGray" Grid.Column="1" VerticalAlignment="Stretch" />
             <DockPanel Grid.Column="2">
