@@ -20,11 +20,23 @@
                 <ColumnDefinition Width="2" />
                 <ColumnDefinition Width="150*" />
             </Grid.ColumnDefinitions>
-            <DockPanel Grid.Column="0">
-
+            <DockPanel Grid.Column="0" LastChildFill="True">
+                <Button Name="serverSettingsButton" Content="Server Settings" DockPanel.Dock="Bottom" />
+                <GroupBox Header="Player List" DockPanel.Dock="Top">
+                    <ListBox>
+                        <ListBoxItem Content="Grand_Teacher1" />
+                        <ListBoxItem Content="Grand_Teacher2" />
+                        <ListBoxItem Content="Grand_Teacher3" />
+                        <ListBoxItem Content="Grand_Teacher4" />
+                        <ListBoxItem Content="Grand_Teacher5" />
+                    </ListBox>
+                </GroupBox>
             </DockPanel>
-            <GridSplitter Background="LightGray" Grid.Column="1" VerticalAlignment="Stretch" />
+            <GridSplitter Background="LightGray" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
             <DockPanel Grid.Column="2">
+                <TextBox Name="serverCommandTextBox" DockPanel.Dock="Bottom" />
+                <TextBox Name="serverLogTextBox" DockPanel.Dock="Top" 
+                        AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" />
             </DockPanel>
         </Grid>
     </DockPanel>
